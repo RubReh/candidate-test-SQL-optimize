@@ -93,7 +93,7 @@ What we assess when you show us the solution:
 - The structure and explanation of your query
 - You're ability to find a solution to this problem (using any tools and aids you wish except asking someone else to do the task for you)
 - How well you know MySQL and algorithmic thinking.
-- Your explanatin of your approach and solution
+- Your explanation of your approach and solution
 
 
 # What you can use:
