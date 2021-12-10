@@ -25,7 +25,7 @@ In this test task we'll make a query to calculate the cummulative sums for each 
 
 # The naive and simple solution (that is not good enough)
 As long as you're not restricted to using only MySQL we can loop over dates in a language like python for each date that we're interested in.
-A pseudo code approcah could look like this:
+A pseudo code approach could look like this:
 
 ```python
 def calculate_cummulative_sums_by_currency(sum_date)
