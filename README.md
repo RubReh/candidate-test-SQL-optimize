@@ -28,7 +28,7 @@ Pseudo code cood look like this:
 ```python
 def calculate_cummulative_sums_by_currency(sum_date)
   
-   sql_data=  execute_sql(SELECT SUM(amount) from transactions where transactions.date < sum_date;)
+   sql_data=  execute_sql(SELECT SUM(amount), date from transactions where transactions.date < sum_date GROUP BY currency;)
    return sql_data
  ```
 
@@ -43,5 +43,21 @@ while date < end_date:
     do_something_with_sum(sum)
     date = increment_date_by_one_day(date)
  ```
+
+This works but it's too slow if we need a sum for several years of data since we're repeating one query for each date. There's gotta be a way to optimize it by making a query that handles the date for us.
+
+
+# First task:
+1. Got to this website and insert the data into a MySQL database
+2. Based on the data, make one MySQL query that gives back a list of cummulative sums for each currency up until that date in the table. Note, is has to be mySQL and not some other dialect of SQL.
+
+The output should look something like this when you're done:
+
+currency|date|cummulative_amount
+btc|2021-01-06|8
+btc|2021-02-01|16
+sek|2021-01-01|2
+sek|2021-01-05|5
+
   
 
