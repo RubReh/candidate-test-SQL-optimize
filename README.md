@@ -13,11 +13,11 @@ Really these are separated by different users, but you can disregard that for th
 
 The table contents looks like this:
 
-id|amount|date|currency
-1|2|2021-01-01|sek
-2|3|2021-01-05|sek
-3|8|2021-01-06|btc
-4|8|2021-02-01|btc
+|id|amount|date|currency|
+|1|2|2021-01-01|sek|
+|2|3|2021-01-05|sek|
+|3|8|2021-01-06|btc|
+|4|8|2021-02-01|btc|
 
 
 In this test task we'll make a query to calculate the cummulative sums for each currency and date starting from the earliest date (2021-01-01) until the latest date in the table ( 2021-02-01)
