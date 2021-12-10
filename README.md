@@ -3,7 +3,7 @@ Testing SQL and reasoning skills with a real-world problem at Divly
 
 
 # Background
-Divly has a lot of data and one feature we have is keeping track of users' transactions in different crypto currencies. These transcations can then be used in many ways. One such feature is the holdings module which in short uses a table of transactions to keep track the total value of holdings in each currency  day by day. Since there's a lot of data it's important to make the SQL queries to fetch this data fast and efficient. The output of such data could looks someting like this:
+Divly has a lot of data and one feature we have is keeping track of users' transactions in different crypto currencies. These transcations can then be used in many ways. One such feature is the holdings module which in short uses a table of transactions to keep track the total value of holdings in each currency  day by day. Since there's a lot of data it's important to make the SQL queries to fetch this data fast and efficient. The output of such data could looks something like this:
 
 <img width="681" alt="bild" src="https://user-images.githubusercontent.com/38507268/145571086-6baafacd-d939-4724-9a63-bb6d09dcde41.png">
 
