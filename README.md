@@ -83,5 +83,17 @@ Can you create an output where the blank dates are filled out something like for
 |btc|2021-02-01|16
 
 
+What we assess when you show us the solution:
+- Reasoning skills in your approach
+- How well you understand the problem
+- The structure and explanation of your query
+- You're ability to find a solution to this problem (using any tools and aids you wish expect asking someone else to do the task for you)
+- How well you know MySQL and algorithmic thinking.
+- Your explanatin of your approach and solution
 
+
+# What you can use:
+1. Use this website that can be used as your test MYSQL environment and run these queries to setup the table that is needed:
+2. https://onecompiler.com/mysql/3xkwy6vvv (Ping me if the link stops working and I'll send a new one)
+3. Other than this all tools and helps are allowed except for asking someone else to do it.
 
