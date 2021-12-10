@@ -61,12 +61,6 @@ The output should look something like this when you're done:
 |sek|2021-01-01|2|
 |sek|2021-01-05|5|
 
-currency|date|cummulative_amount
-|btc|2021-01-06|8|
-|btc|2021-02-01|16|
-|sek|2021-01-01|2|
-|sek|2021-01-05|5|
-
   
 # Second task:
 Now, assuming you have the output that is required by the first task (you can do this task even if you fail to replicate the first task), can you find a way
@@ -75,16 +69,19 @@ to fill in the blank dates in between where there are no datapoints in the table
 **For example:** The cummulative sum for btc was 8 on 2021-01-06 in the table, but didn't jump up to 16 until 2021-02-01.
 Can you create an output where the blank dates are filled out something like for each currency? If you can't find a way to do it in MYSQL, how would you write an algorithm in python (Pseudo code is fine as well) to do it?
 
-btc|2021-01-06|8
-btc|2021-01-07|8
-btc|2021-01-08|8
-btc|2021-01-09|8
-btc|2021-01-10|8
-.
-.
-.
-btc|2021-01-31|8
-btc|2021-02-01|16
+
+| currency  |date   |  cummulative_amount |
+|---|---|---|
+|btc|2021-01-06|8|
+|btc|2021-01-06|8|
+|btc|2021-01-06|8|
+|btc|2021-01-06|8|
+|btc|2021-01-06|8|
+.| | |
+. | | |
+. | | | 
+|btc|2021-02-01|16
+
 
 
 
