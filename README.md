@@ -91,7 +91,7 @@ What we assess when you show us the solution:
 - Reasoning skills in your approach
 - How well you understand the problem
 - The structure and explanation of your query
-- You're ability to find a solution to this problem (using any tools and aids you wish expect asking someone else to do the task for you)
+- You're ability to find a solution to this problem (using any tools and aids you wish except asking someone else to do the task for you)
 - How well you know MySQL and algorithmic thinking.
 - Your explanatin of your approach and solution
 
