@@ -14,6 +14,7 @@ Really these are separated by different users, but you can disregard that for th
 The table contents looks like this:
 
 |id|amount|date|currency|
+|---|---|---|---|
 |1|2|2021-01-01|sek|
 |2|3|2021-01-05|sek|
 |3|8|2021-01-06|btc|
