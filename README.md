@@ -1,14 +1,15 @@
 # candidate-test-SQL-optimize
-Testing SQL and reasoning skills with a real problem at Divly
+Testing SQL and reasoning skills with a real-world problem at Divly
 
 
 # Background
-Divly has a lot of data and at the heart of keeping track of users' transactions in different crypto currencies is the holdings module
-which in short uses a table of transactions to keep track of what a user's holdings in each currency were day by day. Since there's a lot of data it's important to make the SQL queries to fetch this data fast and efficient.
+Divly has a lot of data and one feature we have is keeping track of users' transactions in different crypto currencies. These transcations can then be used on many ways. One thing the data is used foris the holdings module which in short uses a table of transactions to keep track the total value of holdings in each currency  day by day. Since there's a lot of data it's important to make the SQL queries to fetch this data fast and efficient. The output of such data could looks someting like this:
 
-# Divly's transaciton table in MySQL
+<img width="681" alt="bild" src="https://user-images.githubusercontent.com/38507268/145571086-6baafacd-d939-4724-9a63-bb6d09dcde41.png">
+
+# Divly's transaction table in MySQL
 Below is a highly simplified table of a transactions table. It shows the amount of different currency a user received on different dates. 
-Really these are separated by different users, but you can disregard this for the purpose of this test task.
+Really these are separated by different users, but you can disregard that for the purpose of this test task. In other words, this data already filtered so that it contains one single user's transaction data.
 
 The table contents looks like this:
 
@@ -23,7 +24,7 @@ In this test task we'll make a query to calculate the cummulative sums for each 
 
 # The naive and simple solution (that is not good enough)
 As long as you're not restricted to using only MySQL we can loop over dates in a language like python for each date that we're interested in.
-Pseudo code cood look like this:
+A pseudo code approcah could look like this:
 
 ```python
 def calculate_cummulative_sums_by_currency(sum_date)
@@ -32,7 +33,7 @@ def calculate_cummulative_sums_by_currency(sum_date)
    return sql_data
  ```
 
-Looping pseudo code:
+Looping that same pseudo code over many dates:
 
 date = '2021-01-01'
 end_date = '2021-12-31
@@ -44,12 +45,14 @@ while date < end_date:
     date = increment_date_by_one_day(date)
  ```
 
-This works but it's too slow if we need a sum for several years of data since we're repeating one query for each date. There's gotta be a way to optimize it by making a query that handles the date for us.
+This works but it's too slow if we need a sum for several years of data since we're repeating one query for each date. It's slow firstly because we 
+loop it in another backend language than MYSQL so there's a lot of CPU and memory overhead going back and forth between MYSQL and another language. Moreover, the cummulative sum on one date is dependent on the sum of previous dates which mySQL almost certainly can take advantage of whereas making one query per date means we're missing out on that optimization. There's gotta be a way to optimize it by making a query that handles the date for us, don't you think?
 
 
 # First task:
-1. Got to this website and insert the data into a MySQL database
-2. Based on the data, make one MySQL query that gives back a list of cummulative sums for each currency up until that date in the table. Note, is has to be mySQL and not some other dialect of SQL.
+1. Got to this website and insert the data into a MySQL database: https://onecompiler.com/mysql/3xkwy6vvv
+2. Based on the data, make one single MySQL query that gives back a list of **cummulative sums** of the amount column for each currency up until each date in the table. Note, the query must be written for mySQL 8.0 or earlier and not some other dialect of SQL.
+3. By one single query it simply means that you cannot use another backend language to run several queries and lump them together like in the naive example, but rather you can aggregate MySQL statements into one query that gives you the output by letting MYSQL to the entire job.
 
 The output should look something like this when you're done:
 
