@@ -97,7 +97,7 @@ What we assess when you show us the solution:
 
 
 # What you can use:
-1. Use this website that can be used as your test MYSQL environment and run these queries to setup the table that is needed:
+1. Use this website that can be used as your test MYSQL environment and press `run` to add the example data (whihch is all the data you'll be needing):
 2. https://onecompiler.com/mysql/3xkwy6vvv (Ping me if the link stops working and I'll send a new one)
 3. Other than this all tools and helps are allowed except for asking someone else to do it.
 
