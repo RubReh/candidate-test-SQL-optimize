@@ -77,10 +77,10 @@ Can you create an output where the blank dates are filled out something like for
 | currency  |date   |  cumulative_amount |
 |---|---|---|
 |btc|2021-01-06|8|
-|btc|2021-01-06|8|
-|btc|2021-01-06|8|
-|btc|2021-01-06|8|
-|btc|2021-01-06|8|
+|btc|2021-01-07|8|
+|btc|2021-01-08|8|
+|btc|2021-01-09|8|
+|btc|2021-01-10|8|
 .| | |
 . | | |
 . | | | 
