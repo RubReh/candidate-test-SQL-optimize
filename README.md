@@ -51,7 +51,7 @@ loop it in another backend language than MYSQL so there's a lot of CPU and memor
 
 
 # First task:
-1. Got to this website and insert the data into a MySQL database: https://onecompiler.com/mysql/3xkwy6vvv
+1. Go to this website and insert the data into a MySQL database: https://onecompiler.com/mysql/3xkwy6vvv
 2. Based on the data, make one single MySQL query that gives back a list of **cummulative sums** of the amount column for each currency up until each date in the table. Note, the query must be written for mySQL 8.0 or earlier and not some other dialect of SQL.
 3. By one single query it simply means that you cannot use another backend language to run several queries and lump them together like in the naive example, but rather you can aggregate MySQL statements into one query that gives you the output by letting MYSQL to the entire job.
 
